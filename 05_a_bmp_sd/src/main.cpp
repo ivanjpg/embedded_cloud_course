@@ -11,6 +11,19 @@
 
 Adafruit_BMP085 bmp;
 
+char* i2str(int i) {
+  return (char*) ( (i % 10) + '0' );
+}
+
+char* f2str(float f) {
+  char *s = NULL;
+
+  // The integer part of the float
+  int ipart = (int) f;
+  // Decimal part of the float
+  float dpart = f - ipart;
+}
+
 void write2File(const char *path, const char* s, int reverse=0) {
   File fd = SD.open(path, FILE_APPEND);
 

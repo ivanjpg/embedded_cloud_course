@@ -17,7 +17,7 @@
 #define MV_FACTOR ADC_SYS_VOL / ADC_RES / 10.0
 
 // Light threshold to turn the led on
-#define LED_THS 300
+#define LED_THS 600
 
 void setup() {
   Serial.begin(115200);
