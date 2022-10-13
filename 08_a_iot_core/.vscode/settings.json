@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "spiffs.h": "c",
+    "string": "cpp"
+  }
+}
