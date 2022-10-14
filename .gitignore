@@ -1,0 +1,6 @@
+aws_certs/
+ssid.txt
+passwd.txt
+password.txt
+secrets.h
+secrets.hpp
