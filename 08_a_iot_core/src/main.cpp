@@ -126,8 +126,8 @@ void publish2AWS() {
 
     jdoc["mac_Id"] = mac_id;
     jdoc["device_Id"] = AWS_MQTT_THING;
-    jdoc["temp_C"] = String( bmp.readTemperature(), 2 );
-    jdoc["press_hPa"] = bmp.readPressure()/100;
+    jdoc["temp_C"] = dformat( bmp.readTemperature(), 2 );
+    jdoc["press_hPa"] = bmp.readPressure() / 100.0;
 
     serializeJson(jdoc, payload);
 

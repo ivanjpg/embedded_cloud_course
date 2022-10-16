@@ -30,5 +30,6 @@ const char *cstr(const char *s);
 char *readFile(const char* path);
 int connect2WiFi(const char *ssid, const char *password);
 byte scanForI2C();
+double dformat(double n, int digits);
 //PubSubClient getAWSClient(AWS_MQTT_SETTINGS s, WiFiClientSecure sclient, void (*callback)(char *, uint8_t *, unsigned int));
 //int connect2AWS(PubSubClient client, const char *thing, const char *topic);

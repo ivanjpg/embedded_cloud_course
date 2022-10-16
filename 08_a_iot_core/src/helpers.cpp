@@ -93,3 +93,14 @@ byte scanForI2C() {
 
   return addr;
 }
+
+double dformat(double n, int digits) {
+  int nsize = snprintf(NULL, 0, "%.*f", digits, n) + 1;
+  char *s = (char *) malloc( sizeof(char) * nsize + 1 );
+
+  snprintf(s, nsize, "%.*f", digits, n);
+  double d = atof(s);
+  free(s);
+
+  return d;
+}
